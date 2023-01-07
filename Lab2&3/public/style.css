@@ -1,0 +1,182 @@
+/* A debug class, used to separate components graphically during development */
+.debug {
+    border-style:solid;
+    width: 400px;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    background-color: lightcyan;
+}
+.divA {
+    text-align: right;
+}
+
+.searchResult {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    vertical-align: top;
+    margin: 5px;
+    display: inline-block;
+    padding: 10px;
+}
+
+
+.search {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+@media (min-width: 600px) {
+    .flexParent {
+        display: flex;
+        min-height: 600px;
+        min-width: 300px;
+        width: 100%;
+        height: 97vh;
+    }
+    
+    .sidebar {
+        flex: 0.2;
+        min-width: 300;
+        border-style: solid;
+        margin-right: 10px;
+        border-radius: 15px;
+        background-color:#bee1e6;
+        filter: drop-shadow(0 0 0.4rem #caabbf);
+    }
+    
+    .loading {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 250px;
+        margin-bottom: auto;
+        width: 75px;
+        height: 75px;
+    }
+
+    .mainContent {
+        flex: 0.8;
+        padding: 20px;
+        width: 100%;
+        border-style: solid;
+        overflow-y: scroll;
+        margin: 5px;
+        border-radius: 15px;
+        background-color:#bee1e6;
+        filter: drop-shadow(0 0 0.4rem #caabbf);
+    }
+}
+
+
+@media (max-width: 600px) {
+    .flexParent {
+        display: flex;
+        flex-direction: column; 
+        min-height: 100%;
+        min-width: 100%;
+        height: 97vh;
+    }
+    
+    .sidebar {
+        flex: 0.3;
+        min-width: 100%;
+        border-style: solid;
+        overflow-y: scroll;
+        border-radius: 10px;
+        background-color: #bee1e6;
+        filter: drop-shadow(0 0 0.4rem #caabbf);
+        margin: 5px;
+    }
+
+    .loading {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 250px;
+        margin-bottom: auto;
+        width: 75px;
+        height: 75px;
+    }
+    
+    .mainContent {
+        flex: 0.7;
+        margin: 5px;
+        min-width: 100%;
+        border-style: solid;
+        overflow-y: scroll;
+        border-radius: 10px;
+        background-color: #bee1e6;
+        filter: drop-shadow(0 0 0.4rem #caabbf);
+    }
+}
+
+.parentComponent {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    height: 440;
+    border-style: solid;
+    margin: 5px;
+    overflow-y: scroll;
+}
+
+.details {
+    height: 440;
+    border-style: solid;
+    margin: 10px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.ingredientList {
+    border-style: solid;
+    width: 180px;
+    margin: 5px 5px 5px 5px;
+    
+}
+
+.myMargin {
+    margin: 5px;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.myButton{
+    margin: 5px;
+    cursor: pointer;
+    background-color: #f0efeb;
+    border: none; 
+    border-radius: 5px;
+    filter: drop-shadow(0 0 0.2rem #caabbf);
+}
+
+.myIngredient {
+    margin: 5px;
+    background-color:#f0efeb;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.myPrice {
+    margin: 5px;
+    background-color:#f0efeb;
+    border-radius: 5px;
+    padding: 5px;
+    width:fit-content;
+    border-style: solid;
+    border-width: 1px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+
